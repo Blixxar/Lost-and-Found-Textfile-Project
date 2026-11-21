@@ -322,7 +322,7 @@ void addReport(void) {
     sanitizePipe(r.reportedBy);
 
     // Set auto fields
-    sprintf(r.id, "%d", getNextId());
+    snprintf(r.id, sizeof(r.id), "%u", (unsigned int)getNextId());
     strcpy(r.status, "Unclaimed");
     strcpy(r.claimedBy, "N/A");
 
@@ -719,8 +719,7 @@ void editReport(void) {
     printf("Item [%s]: ", r->item);
     readLine(input, sizeof(input));
     if (strlen(input) > 0) {
-        strncpy(r->item, input, MAX_ITEM_LEN - 1);
-        r->item[MAX_ITEM_LEN - 1] = '\0';
+        snprintf(r->item, sizeof(r->item), "%.*s", (int)sizeof(r->item) - 1, input);
         sanitizePipe(r->item);
     }
 
@@ -728,8 +727,7 @@ void editReport(void) {
     printf("Description [%s]: ", r->description);
     readLine(input, sizeof(input));
     if (strlen(input) > 0) {
-        strncpy(r->description, input, MAX_DESC_LEN - 1);
-        r->description[MAX_DESC_LEN - 1] = '\0';
+        snprintf(r->description, sizeof(r->description), "%.*s", (int)sizeof(r->description) - 1, input);
         sanitizePipe(r->description);
     }
 
@@ -737,8 +735,7 @@ void editReport(void) {
     printf("Location [%s]: ", r->location);
     readLine(input, sizeof(input));
     if (strlen(input) > 0) {
-        strncpy(r->location, input, MAX_LOC_LEN - 1);
-        r->location[MAX_LOC_LEN - 1] = '\0';
+        snprintf(r->location, sizeof(r->location), "%.*s", (int)sizeof(r->location) - 1, input);
         sanitizePipe(r->location);
     }
 
@@ -747,8 +744,7 @@ void editReport(void) {
     readLine(input, sizeof(input));
     if (strlen(input) > 0) {
         if (isValidDate(input)) {
-            strncpy(r->date, input, MAX_DATE_LEN - 1);
-            r->date[MAX_DATE_LEN - 1] = '\0';
+            snprintf(r->date, sizeof(r->date), "%.*s", (int)sizeof(r->date) - 1, input);
         } else {
             printf("Invalid date format, keeping current value.\n");
         }
@@ -758,8 +754,7 @@ void editReport(void) {
     printf("Reported By [%s]: ", r->reportedBy);
     readLine(input, sizeof(input));
     if (strlen(input) > 0) {
-        strncpy(r->reportedBy, input, MAX_NAME_LEN - 1);
-        r->reportedBy[MAX_NAME_LEN - 1] = '\0';
+        snprintf(r->reportedBy, sizeof(r->reportedBy), "%.*s", (int)sizeof(r->reportedBy) - 1, input);
         sanitizePipe(r->reportedBy);
     }
 
