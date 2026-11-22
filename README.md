@@ -3,8 +3,7 @@
 **Project 2 – Text File Handling (File System)**  
 Computer Programming 1 — TUP Manila
 
-**Authors:** John Hayden Nell, Bono Tendencia, David Pansoy
-
+**Authors:** John Hayden Nell, Bono Tendencia
 ---
 
 ## Overview
@@ -156,9 +155,8 @@ Lost and Found/
 
 See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for detailed breakdown.
 
-- **John Hayden Nell** — Module A: File I/O (load/save), Add Report
-- **Bono Tendencia** — Module B: View All, View by Status, Search
-- **David Pansoy** — Module C: Update Status, Edit, Delete, Export
+- **John Hayden Nell** — Module A: File I/O (load/save), Add Report, Module B: View All, View by Status, Search, Module C: Update Status, Edit, Delete, Export
+- **Bono Tendencia** —
 
 ---
 
