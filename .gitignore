@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 *.exe
+=======
+>>>>>>> 8ca7b3d90c4663ff10c36175b864d2b4ab325c9c
 *.obj
 *.o
 .vs/
@@ -6,8 +9,11 @@ Debug/
 Release/
 bin/
 obj/
+<<<<<<< HEAD
 *.cbp
 *.sln
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+=======
+>>>>>>> 8ca7b3d90c4663ff10c36175b864d2b4ab325c9c
