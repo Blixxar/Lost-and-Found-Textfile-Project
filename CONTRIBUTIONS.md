@@ -10,9 +10,8 @@
 
 | Member | Module | Functions Owned |
 |--------|--------|-----------------|
-| **John Hayden Nell** | Module A: Data Management | `loadReports()`, `saveAllReports()`, `getNextId()`, `addReport()` |
-| **Bono Tendencia** | Module B: Viewing & Search | `displayReportRow()`, `printTableHeader()`, `viewAllReports()`, `viewByStatus()`, `searchByKeyword()` |
-| **David Pansoy** | Module C: Modification & Export | `findReportIndex()`, `updateStatus()`, `editReport()`, `deleteReport()`, `fileExists()`, `drawSeparator()`, `exportToTxt()` |
+| **John Hayden Nell** | Module A: Data Management | `loadReports()`, `saveAllReports()`, `getNextId()`, `addReport()` | Module B: Viewing & Search | `displayReportRow()`, `printTableHeader()`, `viewAllReports()`, `viewByStatus()`, `searchByKeyword()` | Module C: Modification & Export | `findReportIndex()`, `updateStatus()`, `editReport()`, `deleteReport()`, `fileExists()`, `drawSeparator()`, `exportToTxt()` |
+| **Bono Tendencia** |
 
 ---
 
@@ -33,17 +32,8 @@ The following utility functions were developed collaboratively and used across a
 
 ---
 
-## Equal Contribution Statement
 
-Each member was responsible for a complete, independent module with well-defined interfaces:
-
-- **John (Module A)** handles all data persistence: loading on startup, saving after changes, ID generation, and adding new records. His functions form the foundation that the other modules build on.
-
-- **Bono (Module B)** handles all read-only display and search operations. His functions consume the in-memory array populated by John's `loadReports()` and provide the user-facing views.
-
-- **David (Module C)** handles all write operations that modify existing records: status updates, edits, deletions, and exports. His functions use John's `saveAllReports()` to persist changes and Bono's display helpers for confirmations.
-
-All three members:
+All members:
 - Wrote their functions with complete documentation (purpose, parameters, return value, author)
 - Followed the professor's file handling style consistently
 - Used `#define` constants (no magic numbers)
@@ -60,19 +50,11 @@ void loadReports();           // "r" mode, fscanf with return check
 void saveAllReports();        // "w" mode, fprintf per record
 int getNextId();              // Auto-increment from existing IDs
 void addReport();             // "a" mode append, full input validation
-```
-
-### Bono Tendencia
-```c
 void displayReportRow(Report *r);    // Aligned table row
 void printTableHeader();             // Header with separators
 void viewAllReports();               // All reports + status counts
 void viewByStatus();                 // Filter by Unclaimed/Claimed/Returned
 void searchByKeyword();              // Case-insensitive item/desc/location
-```
-
-### David Pansoy
-```c
 int findReportIndex(char *id);       // Linear search by ID
 void updateStatus();                 // Claimed/Returned + claimant name
 void editReport();                   // Edit any field, keep on Enter
@@ -82,7 +64,11 @@ void drawSeparator(FILE*, char, int); // fputc for export lines
 void exportToTxt();                  // "w"/"a" export with fgetc preview
 ```
 
----
+### Bono Tendencia
+```c
+
+```
+
 
 ## Verification
 
