@@ -1,0 +1,13 @@
+*.exe
+*.obj
+*.o
+.vs/
+Debug/
+Release/
+bin/
+obj/
+*.cbp
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user

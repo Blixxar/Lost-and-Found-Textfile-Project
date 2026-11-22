@@ -1,0 +1,10 @@
+CAMPUS LOST & FOUND REPORT
+============================================================
+BULLETIN BOARD - UNCLAIMED ITEMS
+------------------------------------------------------------
+ID   TYPE   ITEM                      LOCATION                  DATE         STATUS       CLAIMED BY     
+----------------------------------------------------------------------------------------------------
+5    LOST   Test                      Loc                       29/02/2024   Unclaimed    N/A            
+6    LOST   Test-Pipe                 Loc-Pipe                  20/11/2024   Unclaimed    N/A            
+============================================================
+Total exported: 2

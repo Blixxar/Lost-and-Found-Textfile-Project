@@ -1,0 +1,8 @@
+1|LOST|Black umbrella|Black compact umbrella with silver handle|Library|15/11/2024|Ana Santos|Claimed|Claimer Name
+2|FOUND|Student ID|New Description|Cafeteria|16/11/2024|Mark Reyes|Claimed|John Doe
+3|LOST|iPhone 13|New Description|Gym|17/11/2024|Lisa Chen|Claimed|Maria Gomez
+4|FOUND|Wallet|Brown leather wallet, contains cash and cards|Parking Lot|18/11/2024|John Doe|Returned|Robert Kim
+5|LOST|Test|Desc|Loc|29/02/2024|User|Unclaimed|N/A
+6|LOST|Test-Pipe|Desc-Pipe|Loc-Pipe|20/11/2024|User-Pipe|Unclaimed|N/A
+7|LOST|Robust ni bono|Pang kantot|CR ng COS|21/11/2026|Nell|Unclaimed|N/A
+8|FOUND|bebe irish keychain|pink keychain|Around campus|12/02/2008|irish|Claimed|Bbebe irish

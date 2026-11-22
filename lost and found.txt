@@ -1,0 +1,15 @@
+CAMPUS LOST & FOUND REPORT
+============================================================
+ALL REPORTS
+------------------------------------------------------------
+ID   TYPE   ITEM                      LOCATION                  DATE         STATUS       CLAIMED BY     
+----------------------------------------------------------------------------------------------------
+1    LOST   Black umbrella            Library                   15/11/2024   Claimed      Claimer Name   
+2    FOUND  Student ID                Cafeteria                 16/11/2024   Claimed      John Doe       
+3    LOST   iPhone 13                 Gym                       17/11/2024   Claimed      Maria Gomez    
+4    FOUND  Wallet                    Parking Lot               18/11/2024   Returned     Robert Kim     
+5    LOST   Test                      Loc                       29/02/2024   Unclaimed    N/A            
+6    LOST   Test-Pipe                 Loc-Pipe                  20/11/2024   Unclaimed    N/A            
+7    LOST   Robust ni bono            CR ng COS                 21/11/2026   Unclaimed    N/A            
+============================================================
+Total exported: 7
